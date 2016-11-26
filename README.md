@@ -1,4 +1,4 @@
-#FCC URL Shortening Microservice
+#FCC 
 
 This project is to fulfill the requirements for the <a href="https://www.freecodecamp.com/challenges/url-shortener-microservice">URL Shortener Microservice Project</a> on Free Code Camp.
 
