@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+        <br>
+        <br>
+        <div class="container">
+            <h1>URL Shortener Microservice</h1>
+            <h3>Created by Devansh D || <a href="https://github.com/devanshdalal/fcc-url-shortner-ms">Project GitHub</a></h3>
+            
+            <p>This project is to fulfill the requirements for the <a href="https://www.freecodecamp.com/challenges/url-shortener-microservice">URL Shortener Microservice Project</a> on Free Code Camp.</p>
+
+            <h2>User Stories:</h2>
+            <ul>
+                <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+                <li>If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+                <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+            </ul>
+            
+            <h2>Example usage:</h2>
+            <p>Use <code>/new/</code> followed by the URL you want to shorten:</p>
+                <a href=><code>https://kmt-short.herokuapp.com/new/https://kristenmthayer.wordpress.com/2016/05/04/projects-projects-and-more-projects-free-code-camp-certificates/</code></a>
+                <br>
+            <h2>Example output:</h2>
+                <code>{ 
+                <br/>original_url: "https://kristenmthayer.wordpress.com/2016/05/04/projects-projects-and-more-projects-free-code-camp-certificates/",
+                <br/>short_url: "https://kmt-short.herokuapp.com/38" 
+                </br>}</code>
+            <h2>Usage:</h2>
+                <a href="https://kmt-short.herokuapp.com/38"><code>https://kmt-short.herokuapp.com/38</code></a> redirects to <code>https://kristenmthayer.wordpress.com/2016/05/04/projects-projects-and-more-projects-free-code-camp-certificates/</code>
+            
+        </div>
+    </body>
+</html>
