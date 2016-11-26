@@ -1,12 +1,11 @@
-# RequestHeaderParser
+#FCC URL Shortening Microservice
 
-This repository is for the Free Code Camp Back End API [Request Header Parser Microservice](https://www.freecodecamp.com/challenges/request-header-parser-microservice) project. 
+This project is to fulfill the requirements for the <a href="https://www.freecodecamp.com/challenges/url-shortener-microservice">URL Shortener Microservice Project</a> on Free Code Camp.
 
-It expose one endpoint `/api/whoami` to retrieve information from the HTTP headers sent.
+##User Stories:
+* I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+* If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
+* When I visit that shortened URL, it will redirect me to my original link.    
 
-The endpoint returns the following information:
-* Your IP Address
-* Your locale
-* The software you are using
-
-You can find the application hosted on Heroku [here](https://fcc-request-headers-parser-ms.herokuapp.com/api/whoami/).
+##Live Site:
+<a href="https://paltry.herokuapp.com/">https://paltry.herokuapp.com/</a>
