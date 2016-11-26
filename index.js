@@ -36,15 +36,19 @@ app.get('/new/*', function (req, res) {
   
   // var URL = req.Url.path;
   var path_name = (req.path)
+  if(path_name.length<=5){
+    res.send({error:"you are gonna need some valid url after /new/"})
+  }
   path_name=path_name.substring(5,path_name.length);
   console.log(path_name);
   console.log('IsURL: ', config.isURL(path_name) );
   var link=url.parse(path_name);
-  
+  console.log(link);
   
   if( config.isURL(path_name) ){
     var info={};
-    var hash = (link.hostname==null?'':link.hostname) + (link.pathname==null?'':link.pathname);
+    var hash = (link.hostname==null?'':link.hostname) + (link.pathname==null || link=='/'?'':link.pathname);
+    console.log(hash);
     info.original_url=path_name;
     info.short_url=req.headers['host']+'/';
     
